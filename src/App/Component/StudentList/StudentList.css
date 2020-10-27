@@ -1,14 +1,19 @@
 .studentList{
     position: absolute;
-    top: 50%;
-    left: 45%;
-    width: 300px;
+    top: 70%;
+    left: 5%;
 }
 .student{
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
     height: 30px;
-    width: 80px;
+    width: 110px;
+    background-color: #eeeeee;
+    font-size: small;
 }
-span{
-    font-size: large;
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 10px;
 }

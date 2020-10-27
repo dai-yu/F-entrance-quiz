@@ -62,13 +62,17 @@ export default class StudentList extends React.Component{
     }
 
     render(){
+      let index =0;
         return <div className="studentList">
-            {this.state.studentlist.map(student => (
-             // eslint-disable-next-line react/button-has-type
-             <button className="student" key={student}>
-               {student}
+          <div className="title">学员列表</div>
+            {this.state.studentlist.map(student => {
+             index += 1;
+              return (
+            <button className="student" key={student} type="button">
+               <span>{`${index}.${student}`}</span>
             </button>
-            ))}
+            )
+            })}
             <input type="text" onChange={this.handleChange}  value={this.state.student}/>
             <button onClick={this.saveStudent} type="button">保存</button>
         </div>
