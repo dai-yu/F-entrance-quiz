@@ -2,13 +2,13 @@
     /* position: absolute;
     top: 70%;
     left: 5%; */
-    width: 870px;
+    width: 970px;
 }
 .student{
     margin-right: 10px;
     margin-bottom: 30px;
     height: 30px;
-    width: 110px;
+    width: 120px;
     background-color: #eeeeee;
     font-size: small;
 }
@@ -17,4 +17,8 @@
     font-weight: bolder;
     color: black;
     margin-bottom: 10px;
+}
+.value{
+    height: 27px;
+    width: 110px;
 }

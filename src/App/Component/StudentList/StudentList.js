@@ -73,8 +73,7 @@ export default class StudentList extends React.Component{
             </button>
             )
             })}
-            <input type="text" onChange={this.handleChange}  value={this.state.student}/>
-            <button onClick={this.saveStudent} type="button">保存</button>
+            <input type="text" onChange={this.handleChange}  value={this.state.student} className="value" onKeyPress={this.saveStudent}/>
         </div>
     }
 }
