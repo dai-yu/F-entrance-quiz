@@ -1,8 +1,11 @@
 .App {
     width: 900px;
-    height: 900px;
     background-color: #f7f7f7;
     position: relative;
+    padding-top: 2%;
     left: 30%;
-    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

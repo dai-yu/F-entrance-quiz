@@ -1,7 +1,8 @@
 .studentList{
-    position: absolute;
+    /* position: absolute;
     top: 70%;
-    left: 5%;
+    left: 5%; */
+    width: 870px;
 }
 .student{
     margin-right: 10px;

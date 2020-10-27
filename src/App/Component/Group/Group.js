@@ -39,7 +39,8 @@ export default class Group extends React.Component{
       let index =0;
         return <div className="group">
         <span>分组列表</span>
-        {this.state.group.map(list => (
+        <button type="button" onClick={this.group} className="but">分组</button>
+        <div className="content">{this.state.group.map(list => (
              // eslint-disable-next-line react/button-has-type
              <div className="groupTitle" key={list}>
                <span className="title">{`${this.state.group.indexOf(list)+1} 组`}</span>
@@ -52,8 +53,7 @@ export default class Group extends React.Component{
                })}
                </div>
             </div>
-            ))}
-        <button type="button" onClick={this.group} className="but">分组</button>
+            ))}</div>
         </div>
     }
 }
