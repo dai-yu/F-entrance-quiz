@@ -6,7 +6,6 @@ export default class StudentList extends React.Component{
         super(props);
         this.state = {
             studentlist: ["xiaom"],
-            student: "",
         };
     }
 
@@ -47,7 +46,8 @@ export default class StudentList extends React.Component{
         "Access-Control-Allow-Origin": "*",
         "Content-type":"text/plain"
       });
-    fetch(`http://localhost:8080/save?student=${this.state.student}`,{
+    if(this.state.student!==undefined){
+      fetch(`http://localhost:8080/save?student=${this.state.student}`,{
         method:"get",
         headers:myHeaders,
         mode: "no-cors",
@@ -59,6 +59,9 @@ export default class StudentList extends React.Component{
       })
     })
     .catch(error=>error)
+    }else{
+      alert("输入不能为空，请重新输入！")
+    }
     }
 
     render(){
