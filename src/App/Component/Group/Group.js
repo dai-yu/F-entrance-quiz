@@ -9,10 +9,6 @@ export default class Group extends React.Component{
         };
     }
 
-    componentDidMount() {
-        this.update()
-    }
-
     update=()=>{
         const url = "http://localhost:8080/group";
         const myHeaders = new Headers({
@@ -35,6 +31,9 @@ export default class Group extends React.Component{
           });
       }
   
+    group=()=>{
+        this.update()
+    }
 
     render(){
         return <div className="group">
@@ -42,13 +41,14 @@ export default class Group extends React.Component{
              // eslint-disable-next-line react/button-has-type
              <div className="groupTitle" key={list}>
                {`${this.state.group.indexOf(list)+1} 组`}
-               <div>
+               <div className="list">
                {list.map(student =>(
                    <button type="button">{student}</button>
                ))}
                </div>
             </div>
             ))}
+        <button type="button" onClick={this.group} className="but">分组</button>
         </div>
     }
 }

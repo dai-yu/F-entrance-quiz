@@ -1,6 +1,6 @@
 .group{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 45%;
     width: 300px;
 }
@@ -10,4 +10,12 @@
     background-color:  #eeeeee;
     text-align: center;
     margin-bottom: 20px;
+}
+.but{
+    position: absolute;
+    top: 0%;
+    right: -20%;
+}
+.list{
+    background-color:  white;
 }

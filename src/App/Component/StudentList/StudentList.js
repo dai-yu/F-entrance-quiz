@@ -58,7 +58,7 @@ export default class StudentList extends React.Component{
     }
 
     render(){
-        return <div>
+        return <div className="studentList">
             {this.state.studentlist.map(student => (
              // eslint-disable-next-line react/button-has-type
              <button className="student" key={student}>
