@@ -6,6 +6,7 @@ export default class StudentList extends React.Component{
         super(props);
         this.state = {
             studentlist: ["xiaom"],
+            student: "",
         };
     }
 
@@ -37,10 +38,8 @@ export default class StudentList extends React.Component{
 
     handleChange= (event) =>{
       this.setState({
-        // eslint-disable-next-line react/no-unused-state
         student: event.target.value,
       })
-      
     }
 
     saveStudent=()=>{
@@ -53,7 +52,12 @@ export default class StudentList extends React.Component{
         headers:myHeaders,
         mode: "no-cors",
     })
-    .then(()=>{this.update()})
+    .then(()=>{
+      this.update()
+      this.setState({
+        student: "",
+      })
+    })
     .catch(error=>error)
     }
 
@@ -65,7 +69,7 @@ export default class StudentList extends React.Component{
                {student}
             </button>
             ))}
-            <input type="text" onChange={this.handleChange} />
+            <input type="text" onChange={this.handleChange}  value={this.state.student}/>
             <button onClick={this.saveStudent} type="button">保存</button>
         </div>
     }
