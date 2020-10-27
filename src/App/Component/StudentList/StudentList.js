@@ -48,7 +48,7 @@ export default class StudentList extends React.Component{
         "Access-Control-Allow-Origin": "*",
         "Content-type":"text/plain"
       });
-    fetch(`http://localhost:8080/group?student=${this.state.student}`,{
+    fetch(`http://localhost:8080/save?student=${this.state.student}`,{
         method:"get",
         headers:myHeaders,
         mode: "no-cors",
