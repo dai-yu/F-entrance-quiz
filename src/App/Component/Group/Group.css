@@ -1,6 +1,7 @@
 .group{
     position: relative;
     background-color: #f7f7f7;
+    width: 970px;
 }
 .groupTitle{
     width: 970px;
@@ -22,8 +23,13 @@
     justify-content: flex-start;
     align-items: center;
 }
-span{
-    font-size: large;
+.Titles{
+    position: relative;
+    font-size: 20px;
+    font-weight: bolder;
+    /* left: -434%; */
+    width: 100px;
+    background-color: #f7f7f7;
 }
 .studentgroup{
     margin-right: 20px;
@@ -36,5 +42,5 @@ span{
     color: white;
 }
 .content{
-    margin-top: 2%;
+    margin-top: 3%;
 }

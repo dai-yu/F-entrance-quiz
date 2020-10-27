@@ -38,7 +38,7 @@ export default class Group extends React.Component{
     render(){
       let index =0;
         return <div className="group">
-        <span>分组列表</span>
+        <div className="Titles"><span>分组列表</span></div>
         <button type="button" onClick={this.group} className="but">分组</button>
         <div className="content">{this.state.group.map(list => (
              // eslint-disable-next-line react/button-has-type
