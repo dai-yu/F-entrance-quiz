@@ -1,4 +1,5 @@
 import React from 'react'
+import './Group.css'
 
 export default class Group extends React.Component{
     constructor(props){
@@ -36,8 +37,18 @@ export default class Group extends React.Component{
   
 
     render(){
-        return <div>
-        {this.state.group}
+        return <div className="group">
+        {this.state.group.map(list => (
+             // eslint-disable-next-line react/button-has-type
+             <div className="groupTitle" key={list}>
+               {`${this.state.group.indexOf(list)+1} 组`}
+               <div>
+               {list.map(student =>(
+                   <button type="button">{student}</button>
+               ))}
+               </div>
+            </div>
+            ))}
         </div>
     }
 }

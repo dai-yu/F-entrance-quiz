@@ -1,0 +1,13 @@
+.group{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 300px;
+}
+.groupTitle{
+    width: auto;
+    width: 300px;
+    background-color:  #eeeeee;
+    text-align: center;
+    margin-bottom: 20px;
+}
