@@ -36,16 +36,20 @@ export default class Group extends React.Component{
     }
 
     render(){
+      let index =0;
         return <div className="group">
         <span>分组列表</span>
         {this.state.group.map(list => (
              // eslint-disable-next-line react/button-has-type
              <div className="groupTitle" key={list}>
-               {`${this.state.group.indexOf(list)+1} 组`}
+               <span className="title">{`${this.state.group.indexOf(list)+1} 组`}</span>
                <div className="list">
-               {list.map(student =>(
-                   <button type="button">{student}</button>
-               ))}
+               {list.map(student =>{
+                 index += 1;
+                 return (
+                  <div type="button" className="studentgroup">{`${index}.${student}`}</div>
+              )
+               })}
                </div>
             </div>
             ))}

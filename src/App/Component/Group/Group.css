@@ -1,13 +1,12 @@
 .group{
     position: absolute;
-    top: 10%;
-    left: 45%;
-    width: 300px;
+    top: 5%;
+    left: 5%;
+    background-color: #f7f7f7;
 }
 .groupTitle{
-    width: auto;
-    width: 300px;
-    background-color:  #eeeeee;
+    width: 800px;
+    background-color:  #929aab;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -15,10 +14,25 @@
     position: absolute;
     top: 0%;
     right: -20%;
+    background-color: #ea5455;
 }
 .list{
     background-color:  white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 span{
     font-size: large;
+}
+.studentgroup{
+    margin-right: 20px;
+    height: 30px;
+    width: auto;
+    padding:  8px 25px;
+    background-color: #eeeeee;
+}
+.title{
+    color: white;
 }
